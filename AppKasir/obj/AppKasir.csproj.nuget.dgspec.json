@@ -1,28 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dio\\Documents\\Pramudhio\\Algo 2\\App Kasir Part 1\\AppKasir\\AppKasir.csproj": {}
+    "D:\\Kasir\\AppKasir\\AppKasir.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dio\\Documents\\Pramudhio\\Algo 2\\App Kasir Part 1\\AppKasir\\AppKasir.csproj": {
+    "D:\\Kasir\\AppKasir\\AppKasir.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dio\\Documents\\Pramudhio\\Algo 2\\App Kasir Part 1\\AppKasir\\AppKasir.csproj",
+        "projectUniqueName": "D:\\Kasir\\AppKasir\\AppKasir.csproj",
         "projectName": "AppKasir",
-        "projectPath": "C:\\Users\\Dio\\Documents\\Pramudhio\\Algo 2\\App Kasir Part 1\\AppKasir\\AppKasir.csproj",
-        "packagesPath": "C:\\Users\\Dio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dio\\Documents\\Pramudhio\\Algo 2\\App Kasir Part 1\\AppKasir\\obj\\",
+        "projectPath": "D:\\Kasir\\AppKasir\\AppKasir.csproj",
+        "packagesPath": "C:\\Users\\atsej\\.nuget\\packages\\",
+        "outputPath": "D:\\Kasir\\AppKasir\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\atsej\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -43,14 +39,35 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,7 +79,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
