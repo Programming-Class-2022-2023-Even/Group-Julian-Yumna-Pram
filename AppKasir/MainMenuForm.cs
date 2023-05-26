@@ -12,9 +12,56 @@ namespace AppKasir
 {
     public partial class MainMenuForm : Form
     {
+        public static MainMenuForm menu;
+        MenuStrip mnstrip;
+        FormLogin frmLogin;
+        void frmLogin_fromClosed(object sender, FormClosedEventArgs e)
+        {
+            frmLogin = null;
+        }
+        void lockedMenu()
+        {
+            loginMenu.Enabled = true;
+            logoutMenu.Enabled = false;
+            masterMenu.Enabled = false;
+            transactionMenu.Enabled = false;
+            reportMenu.Enabled = false;
+            utilityMenu.Enabled = false;
+            menu = this;
+        }
         public MainMenuForm()
         {
             InitializeComponent();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainMenuForm_Load(object sender, EventArgs e)
+        {
+            lockedMenu();
+        }
+
+        private void loginMenu_Click(object sender, EventArgs e)
+        {
+            if (frmLogin == null)
+            {
+                frmLogin = new FormLogin();
+                frmLogin.FormClosed += new FormClosedEventHandler(frmLogin_fromClosed);
+                frmLogin.ShowDialog();
+                //frmLogin.Show();
+            }
+            else
+            {
+                frmLogin.Activate();
+            }
+        }
+
+        private void logoutMenu_Click(object sender, EventArgs e)
+        {
+            lockedMenu();
         }
     }
 }

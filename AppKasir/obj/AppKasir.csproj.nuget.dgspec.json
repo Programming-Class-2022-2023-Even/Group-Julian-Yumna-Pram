@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kasir\\AppKasir\\AppKasir.csproj": {}
+    "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {}
   },
   "projects": {
-    "D:\\Kasir\\AppKasir\\AppKasir.csproj": {
+    "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kasir\\AppKasir\\AppKasir.csproj",
+        "projectUniqueName": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
         "projectName": "AppKasir",
-        "projectPath": "D:\\Kasir\\AppKasir\\AppKasir.csproj",
-        "packagesPath": "C:\\Users\\atsej\\.nuget\\packages\\",
-        "outputPath": "D:\\Kasir\\AppKasir\\obj\\",
+        "projectPath": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
+        "packagesPath": "C:\\Users\\yumna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\atsej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yumna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -67,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

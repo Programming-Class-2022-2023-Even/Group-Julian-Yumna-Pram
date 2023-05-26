@@ -40,9 +40,16 @@ namespace AppKasir
                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    MainMenuForm frmUtama = new MainMenuForm();
-                    frmUtama.Show();
-                    this.Hide();
+                    MainMenuForm.menu.loginMenu.Enabled = false;
+                    MainMenuForm.menu.logoutMenu.Enabled = true;
+                    MainMenuForm.menu.masterMenu.Enabled = true;
+                    MainMenuForm.menu.transactionMenu.Enabled = true;
+                    MainMenuForm.menu.reportMenu.Enabled = true;
+                    MainMenuForm.menu.utilityMenu.Enabled = true;
+                    //MainMenuForm frmUtama = new MainMenuForm();
+                    //frmUtama.Show();
+
+                    this.Close();
                 }
                 else
                 {
