@@ -15,9 +15,15 @@ namespace AppKasir
         public static MainMenuForm menu;
         MenuStrip mnstrip;
         FormLogin frmLogin;
+
         void frmLogin_fromClosed(object sender, FormClosedEventArgs e)
         {
             frmLogin = null;
+        }
+        FormMasterCashier frmCashier;
+        void frmCashier_fromClosed(object sender, FormClosedEventArgs e)
+        {
+            frmCashier = null;
         }
         void lockedMenu()
         {
@@ -62,6 +68,21 @@ namespace AppKasir
         private void logoutMenu_Click(object sender, EventArgs e)
         {
             lockedMenu();
+        }
+
+        private void cashierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmCashier == null)
+            {
+                frmCashier = new FormMasterCashier();
+                frmCashier.FormClosed += new FormClosedEventHandler(frmCashier_fromClosed);
+                frmCashier.ShowDialog();
+                //frmLogin.Show();
+            }
+            else
+            {
+                frmCashier.Activate();
+            }
         }
     }
 }

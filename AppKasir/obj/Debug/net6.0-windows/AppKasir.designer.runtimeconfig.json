@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\yumna\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\yumna\\.nuget\\packages"
+      "C:\\Users\\HP OMEN\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\HP OMEN\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

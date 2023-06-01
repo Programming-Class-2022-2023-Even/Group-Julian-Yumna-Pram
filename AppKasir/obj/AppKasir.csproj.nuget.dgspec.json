@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {}
+    "G:\\Academics\\Programming\\Algo 2023\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {
+    "G:\\Academics\\Programming\\Algo 2023\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
+        "projectUniqueName": "G:\\Academics\\Programming\\Algo 2023\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
         "projectName": "AppKasir",
-        "projectPath": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
-        "packagesPath": "C:\\Users\\yumna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yumna\\source\\repos\\Programming-Class-2022-2023-Even\\Group-Julian-Yumna-Pram\\AppKasir\\obj\\",
+        "projectPath": "G:\\Academics\\Programming\\Algo 2023\\Group-Julian-Yumna-Pram\\AppKasir\\AppKasir.csproj",
+        "packagesPath": "C:\\Users\\HP OMEN\\.nuget\\packages\\",
+        "outputPath": "G:\\Academics\\Programming\\Algo 2023\\Group-Julian-Yumna-Pram\\AppKasir\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yumna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP OMEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
