@@ -1,4 +1,6 @@
-﻿namespace AppKasir
+﻿using Microsoft.Data.SqlClient;
+
+namespace AppKasir
 {
     partial class FormMasterCashier
     {
@@ -90,6 +92,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(121, 23);
             textBox1.TabIndex = 4;
+            textBox1.KeyPress += textBox1_KeyPress;
             // 
             // textBox2
             // 
@@ -198,16 +201,14 @@
             PerformLayout();
         }
 
+     
+
         private void FormMasterCashier_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            FirstCondtion();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
+     
         private void label2_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
