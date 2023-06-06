@@ -50,12 +50,12 @@ namespace AppKasir
         {
             SqlConnection conn = konn.GetConn();
             conn.Open();
-            cmd = new SqlCommand("Select * from TBL_Cashier", conn);
+            cmd = new SqlCommand("Select * from TBL_KASIR", conn);
             ds = new DataSet();
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "TBL_Cashier");
+            da.Fill(ds, "TBL_KASIR");
             dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = "TBL_Cashier";
+            dataGridView1.DataMember = "TBL_KASIR";
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.Refresh();
 
@@ -75,7 +75,7 @@ namespace AppKasir
             {
                 SqlConnection conn = konn.GetConn();
 
-                cmd = new SqlCommand("Insert TBL_Cashier values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "')", conn);
+                cmd = new SqlCommand("Insert TBL_KASIR values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "')", conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Data Input Successful");
@@ -88,7 +88,7 @@ namespace AppKasir
             {
                 SqlConnection conn = konn.GetConn();
 
-                cmd = new SqlCommand("Select * from  TBL_Cashier where CashierCode= '" + textBox1.Text +"'", conn);
+                cmd = new SqlCommand("Select * from  TBL_KASIR where CashierCode= '" + textBox1.Text +"'", conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 rd = cmd.ExecuteReader();
