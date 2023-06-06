@@ -12,7 +12,7 @@ namespace AppKasir
         public SqlConnection GetConn()
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data source=app.dds.co.id;initial catalog=DB_KASIR;uid=sa;pwd=Dds4rv4!";
+            conn.ConnectionString = "Data source=app.dds.co.id;initial catalog=DB_KASIR;uid=-;pwd=-";
             return conn;
         }
     }
