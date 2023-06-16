@@ -35,6 +35,7 @@ namespace AppKasir
             textBox3.Text = "";
             comboBox1.Text = "";
             showLevel();
+            ShowCashierData();
         }
         public FormMasterCashier()
         {
@@ -88,7 +89,7 @@ namespace AppKasir
             {
                 SqlConnection conn = konn.GetConn();
 
-                cmd = new SqlCommand("Select * from  TBL_KASIR where CashierCode= '" + textBox1.Text +"'", conn);
+                cmd = new SqlCommand("Select * from  TBL_KASIR where KodeKasir= '" + textBox1.Text + "'", conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 rd = cmd.ExecuteReader();
@@ -104,6 +105,42 @@ namespace AppKasir
                     MessageBox.Show("Data Not Found");
                 }
 
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() == "" || textBox2.Text.Trim() == "" || textBox3.Text.Trim() == "" || comboBox1.Text.Trim() == "")
+            {
+                MessageBox.Show("Make sure all forms are filled");
+            }
+            else
+            {
+                SqlConnection conn = konn.GetConn();
+
+                cmd = new SqlCommand("Update TBL_KASIR set NamaKasir='" + textBox2.Text + "',PasswordKasir='" + textBox3.Text + "',LevelKasir='" + comboBox1.Text + "' where KodeKasir='" + textBox1.Text + "'", conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Edit Successful");
+                FirstCondtion();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim() == "" || textBox2.Text.Trim() == "" || textBox3.Text.Trim() == "" || comboBox1.Text.Trim() == "")
+            {
+                MessageBox.Show("Make sure all forms are filled");
+            }
+            else
+            {
+                SqlConnection conn = konn.GetConn();
+
+                cmd = new SqlCommand("Delete TBL_KASIR  where KodeKasir='" + textBox1.Text + "'", conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Deletion Successful");
+                FirstCondtion();
             }
         }
     }

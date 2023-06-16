@@ -17,9 +17,9 @@ namespace AppKasir
         {
             InitializeComponent();
             {
-                
+
             }
-        
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -72,6 +72,11 @@ namespace AppKasir
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
         }
     }
 }

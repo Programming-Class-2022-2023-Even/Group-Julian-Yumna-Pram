@@ -20,10 +20,17 @@ namespace AppKasir
         {
             frmLogin = null;
         }
+
         FormMasterCashier frmCashier;
         void frmCashier_fromClosed(object sender, FormClosedEventArgs e)
         {
             frmCashier = null;
+        }
+
+        FormMasterItem frmItem;
+        void frmItem_fromClosed(object sender, FormClosedEventArgs e)
+        {
+            frmItem = null;
         }
         void lockedMenu()
         {
@@ -82,6 +89,21 @@ namespace AppKasir
             else
             {
                 frmCashier.Activate();
+            }
+        }
+
+        private void itemsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmItem == null)
+            {
+                frmItem = new FormMasterItem();
+                frmItem.FormClosed += new FormClosedEventHandler(frmItem_fromClosed);
+                frmItem.ShowDialog();
+                //frmLogin.Show();
+            }
+            else
+            {
+                frmItem.Activate();
             }
         }
     }
